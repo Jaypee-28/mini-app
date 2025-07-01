@@ -11,7 +11,7 @@ export default function Modal({ show, onClose }: Props) {
     if (show) {
       document.body.style.overflow = "hidden";
       if ("vibrate" in navigator) {
-        navigator.vibrate([200, 100, 200]); // mobile only
+        navigator.vibrate([200, 100, 200]);
       }
     } else {
       document.body.style.overflow = "auto";
